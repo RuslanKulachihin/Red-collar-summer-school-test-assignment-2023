@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Open+Sans:ital,wght@0,500;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+.body {
+  background-color: #000000; }
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 960px;
+  margin-top: 64px;
+  padding: 0 10px; }
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px; }
+  .buttons__portfolio {
+    font-family: 'Times New Roman', 'Arimo';
+    background-color: #f51b1b;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 16px 8px;
+    font-size: 24px;
+    line-height: 120%;
+    min-width: 186px;
+    min-height: 45px; }
+  .buttons__timer {
+    font-family: 'Times New Roman', 'Arimo';
+    background-color: #f51b1b;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 16px 8px;
+    font-size: 24px;
+    line-height: 120%;
+    min-width: 186px;
+    min-height: 45px; }
+
+.info {
+  margin-top: 133px; }
+  .info__title {
+    color: #ffffff;
+    font-family: 'Times New Roman', 'OpenSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 100%; }
+  .info__student-name {
+    font-family: 'Times New Roman', 'Arimo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+    margin-top: 24px;
+    color: #ffffff; }
+
+/*# sourceMappingURL=main_cover.css.map */

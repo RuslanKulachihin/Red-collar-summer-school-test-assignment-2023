@@ -1,0 +1,9 @@
+@mixin footer-button {
+    position: relative;
+    color: #eef0f7;
+    width: 63px;
+    height: 63px;
+    background: linear-gradient(135deg, #0d8afc 32.14%, #33f0b0 145.63%);
+    box-shadow: 8px 20px 30px rgba(13, 137, 252, 0.4);
+    border-radius: 50.5px;
+}

@@ -1,0 +1,12 @@
+@mixin buttons {
+    font-family: 'Times New Roman', 'Arimo';
+    background-color: $red-color;
+    color: $text-color;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 16px 8px;
+    font-size: 24px;
+    line-height: 120%;
+    min-width: 186px;
+    min-height: 45px;
+}

@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Cousine&family=Fira+Sans&family=Lato&family=Open+Sans&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+.body {
+  font-family: 'Times New Roman', 'Open Sans';
+  color: #ffffff;
+  background-color: #000000; }
+
+.wrapper {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 40px 40px; }
+
+.block-logo-firm {
+  position: relative;
+  width: 100%;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.contaner {
+  display: grid;
+  grid-template-columns: 1fr 35px 3fr; }
+
+.contact-info {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 322px;
+  margin-top: -12px;
+  max-height: 800px; }
+
+/*.contact-info::before {
+    position: absolute;
+    display: block;
+
+    content: url('../../img/Union-user.svg');
+
+    left: calc(50% - 106px / 2 - 0px);
+    top: 75px;
+    transform: rotate(8deg);
+}*/
+.user-contact-information {
+  position: relative;
+  background-color: #f51b1b;
+  min-height: 454px;
+  padding: 0 10px 0 24px;
+  border-radius: 24px 24px 0px 0px;
+  margin-top: -50px; }
+
+.user-photo {
+  position: relative;
+  width: 100%; }
+
+.user-photo_glasses {
+  position: absolute;
+  width: 50%;
+  left: calc(62% / 2 - 0px);
+  top: calc(15% - 50px);
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg); }
+
+.vector::before {
+  position: absolute;
+  display: block;
+  content: url("../../img/Union.svg");
+  left: calc(50% - 60px / 2 - 0px);
+  top: -17px; }
+
+.user-name {
+  margin: 40px 0; }
+  .user-name__name {
+    margin-bottom: 8px;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px; }
+  .user-name__age-city {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px; }
+
+.contact-information {
+  overflow-wrap: break-word; }
+
+.contact-information a {
+  font-family: 'Lato';
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  word-break: break-all; }
+
+.contact-information a:nth-child(odd) {
+  display: block;
+  margin: 20px 0 0 30px; }
+
+.phone::before {
+  position: absolute;
+  content: url("../../img/contact-info-icons/phone-call.svg"); }
+
+.mail::before {
+  position: absolute;
+  content: url("../../img/contact-info-icons/24x-mail.svg"); }
+
+.telegram::before {
+  position: absolute;
+  content: url("../../img/contact-info-icons/24x-telegram.svg"); }
+
+.githab::before {
+  position: absolute;
+  content: url("../../img/contact-info-icons/24x-github.svg"); }
+
+.about-me {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  max-width: 690px; }
+
+.user-info {
+  margin-top: 12px; }
+
+.user-skills {
+  position: relative;
+  margin-top: 33px;
+  border: 1px solid #ffffff;
+  padding: 27px; }
+  .user-skills__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 20px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
+  .user-skills__title {
+    font-family: 'Cousine';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%; }
+  .user-skills__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8px;
+    padding-bottom: 20px;
+    max-width: 400px; }
+  .user-skills .line-not {
+    border-bottom: none; }
+  .user-skills .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 10px calc(10% - 32px / 4 - 0px);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+.user-skills::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 60px;
+  height: 20px;
+  content: url("../../img/arrow.svg");
+  top: -0.9px; }
+
+.list_name-university {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.01em; }
+.list_specialization {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  opacity: 0.4; }
+.list_name-skill {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  gap: 10px; }
+
+@media (max-width: 1024px) {
+  .block-logo-firm {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+
+  .contact-info {
+    margin-top: 51px; }
+
+  .about-me {
+    max-width: 100%; }
+
+  .user-info {
+    margin-top: 40px; }
+
+  .user-skills {
+    margin-top: 25px;
+    padding: 20px 15px 30px; }
+
+  .user-skills__container {
+    padding-top: 20px; }
+
+  .user-skills__title {
+    margin-bottom: 16px; }
+
+  .list_name-university,
+  .list_specialization,
+  .list_name-skill {
+    font-size: 16px; }
+
+  .user-skills__container {
+    grid-template-columns: 2fr; } }
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 23.67px 20px 40px; }
+
+  .contact-info {
+    position: relative;
+    width: 100%;
+    min-width: 280px;
+    max-height: 100%; }
+
+  .user-photo_glasses {
+    top: calc(16% - 155px / 4); }
+
+  .user-name {
+    margin: 24px 0 34px; }
+
+  .contaner {
+    grid-template-columns: 1fr; }
+
+  .user-contact-information {
+    min-height: 288px; }
+
+  .user-name__name {
+    margin-bottom: 4px; }
+
+  .user-contact-information {
+    padding: 0 10px 0 18px; }
+
+  .contact-information {
+    margin-bottom: 42px; }
+
+  .user-skills::before {
+    right: calc(50% - 60px / 2); } }
+/*
+@media (max-width: 576px) {
+}*/
+
+/*# sourceMappingURL=main_portfolio.css.map */

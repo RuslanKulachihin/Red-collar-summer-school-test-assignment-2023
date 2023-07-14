@@ -1,0 +1,48 @@
+//STYLES
+.body {
+    background-color: $background-color;
+}
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.article {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin-top: 64px;
+    padding: 0 10px;
+}
+.buttons {
+    display: flex;
+
+    gap: 15px;
+    &__portfolio {
+        @include buttons;
+    }
+    &__timer {
+        @include buttons;
+    }
+}
+.info {
+    margin-top: 133px;
+    &__title {
+        color: $text-color;
+        font-family: 'Times New Roman', 'OpenSans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 100%;
+    }
+
+    &__student-name {
+        font-family: 'Times New Roman', 'Arimo';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 120%;
+        margin-top: 24px;
+
+        color: $text-color;
+    }
+}

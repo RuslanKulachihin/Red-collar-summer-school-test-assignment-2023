@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Red-Collar School 2023</title>
+        <link rel="icon" href="assets/img/logoPag.ico" />
+        <link rel="stylesheet" href="assets/scss/main_pomodoro-timer.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body class="body">
+        <div class="wrapper">
+            <div class="contaner">
+                <nav class="tack-menu">
+                    <button id="itemTimer" class="tack-menu__timer active-button tack-menu_text">Таймер</button>
+                    <button id="itemTack" class="tack-menu__tacks tack-menu_text">Задачи</button>
+                    <button id="itemCompleted" class="tack-menu__completed-tasks tack-menu_text">Выполненые</button>
+                </nav>
+                <section class="space-empty"></section>
+                <section class="form-task"></section>
+                <section class="task-location"></section>
+                <section class="function-buttons">
+                    <div class="function-buttons__container">
+                        <button class="active-timer on">Запустить таймер !</button>
+                        <button class="timer-restart on">
+                            <img src="assets/img/interactive-buttons/restart.svg" class="restart-icon" alt="button-restart" />
+                        </button>
+                    </div>
+                </section>
+                <nav class="tack-menu timer-states">
+                    <button id="timer" class="tack-menu__timer active-button tack-menu_text timer-statu">Работа</button>
+
+                    <button id="shortRest" class="tack-menu__short-rest tack-menu_text timer-statu">Перерыв</button>
+
+                    <button id="longRest" class="tack-menu__long-rest tack-menu_text timer-statu">Отдых</button>
+                    <button id="pomodoro" class="tack-menu__short-rest tack-menu_text timer-statu">Помодоро</button>
+                </nav>
+                <footer class="footer">
+                    <div class="footer__botton">
+                        <button id="custom" class="round__bottom-styles footer__button-back tack-menu__button">Настройки <br />пользователя</button>
+                        <button class="tack-menu__button-create-tack round__bottom-styles">
+                            <img src="assets/img/interactive-buttons/plus.svg" class="button-icon" alt="button-forward" />
+                        </button>
+                        <button id="defaulte" class="round__bottom-styles tack-menu__button on">Предустановленные таймеры</button>
+                    </div>
+                    <h4 class="footer__preview">Добавите новую задачу</h4>
+                </footer>
+            </div>
+        </div>
+        <script src="assets/scripts/components/timer-functionality/states-timer.js"></script>
+        <script src="assets/scripts/components/timer-element-DOM/timer-dial-element.js"></script>
+        <script src="assets/scripts/components/timer-element-DOM/timer-plmodoro-element.js"></script>
+        <script src="assets/scripts/components/timer-element-DOM/edit-tack-form.js"></script>
+        <script src="assets/scripts/components/timer-element-DOM/timer-dial-input-element.js"></script>
+        <script src="assets/scripts/components/timer-element-DOM/input-tack-form.js"></script>
+        <script src="assets/scripts/components/timer-element-DOM/task-field-element.js"></script>
+        <script src="assets/scripts/components/timer-element-DOM/task-card-element.js"></script>
+        <script src="assets/scripts/components/timer-functionality/timer-events.js"></script>
+        <script src="assets/scripts/components/timer-functionality/Timer.js"></script>
+        <script src="assets/scripts/components/task-functionality/Task.js"></script>
+        <script src="assets/scripts/components/timer-functionality/selecting-menu-item.js"></script>
+    </body>
+</html>

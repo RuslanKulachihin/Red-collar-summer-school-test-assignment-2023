@@ -1,0 +1,16 @@
+.task-list {
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 400px);
+    overflow: overlay;
+    height: 70vh;
+    width: 450px;
+    margin: 15px 0;
+
+    &__item {
+    }
+}
+
+.footer {
+    flex: 0 0 auto;
+}

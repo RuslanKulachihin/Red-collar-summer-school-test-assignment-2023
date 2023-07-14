@@ -1,0 +1,309 @@
+.body {
+    font-family: 'Times New Roman', 'Open Sans';
+    color: $text-color;
+    background-color: $background-color;
+}
+.wrapper {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 40px 40px;
+}
+
+.logo-firm {
+}
+.block-logo-firm {
+    position: relative;
+    width: 100%;
+    height: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+.contaner {
+    display: grid;
+    grid-template-columns: 1fr 35px 3fr;
+}
+
+.contact-info {
+    position: sticky;
+    top: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 322px;
+    margin-top: -12px;
+    max-height: 800px;
+}
+/*.contact-info::before {
+    position: absolute;
+    display: block;
+
+    content: url('../../img/Union-user.svg');
+
+    left: calc(50% - 106px / 2 - 0px);
+    top: 75px;
+    transform: rotate(8deg);
+}*/
+.user-contact-information {
+    position: relative;
+    background-color: $red-color;
+    min-height: 454px;
+    padding: 0 10px 0 24px;
+    border-radius: 24px 24px 0px 0px;
+    margin-top: -50px;
+}
+
+.user-photo {
+    position: relative;
+    width: 100%;
+}
+.user-photo_glasses {
+    position: absolute;
+    width: 50%;
+    left: calc(62% / 2 - 0px);
+    top: calc(15% - 50px);
+    //bottom: 30%;
+    transform: rotate(8deg);
+}
+
+.vector::before {
+    position: absolute;
+    display: block;
+    content: url('../../img/details/Union.svg');
+    left: calc(50% - 60px / 2 - 0px);
+    top: -17px;
+}
+
+.user-name {
+    margin: 40px 0;
+
+    &__name {
+        margin-bottom: 8px;
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    &__age-city {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+.contact-information {
+    overflow-wrap: break-word;
+}
+
+.contact-information a {
+    font-family: 'Lato';
+    color: $text-color;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    word-break: break-all;
+}
+.contact-information a:nth-child(odd) {
+    display: block;
+    margin: 20px 0 0 30px;
+}
+
+.phone::before {
+    position: absolute;
+    content: url('../../img/contact-info-icons/phone-call.svg');
+}
+.mail::before {
+    position: absolute;
+    content: url('../../img/contact-info-icons/24x-mail.svg');
+}
+.mail-href {
+}
+
+.telegram::before {
+    position: absolute;
+    content: url('../../img/contact-info-icons/24x-telegram.svg');
+}
+.telegram-href {
+}
+.githab::before {
+    position: absolute;
+    content: url('../../img/contact-info-icons/24x-github.svg');
+}
+.githab-href {
+}
+
+.about-me {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    max-width: 690px;
+}
+.user-info {
+    margin-top: 12px;
+}
+.user-skills {
+    position: relative;
+    margin-top: 33px;
+    border: 1px solid $text-color;
+    padding: 27px;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding-top: 20px;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    &__title {
+        font-family: 'Cousine';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-bottom: 20px;
+        max-width: 400px;
+    }
+    .line-not {
+        border-bottom: none;
+    }
+    .skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px calc(10% - 32px / 4 - 0px);
+        flex-wrap: wrap;
+    }
+    &__item {
+    }
+}
+.user-skills::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 60px;
+    height: 20px;
+    content: url('../../img/details/arrow.svg');
+    // left: calc(50% - 60px / 2 - 0px);
+    top: -0.9px;
+}
+
+.list {
+    &_name-university {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+    }
+    &_specialization {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        opacity: 0.4;
+    }
+    &_name-skill {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        gap: 10px;
+    }
+}
+.education {
+    &__item {
+    }
+}
+.career {
+}
+.skills {
+}
+
+@media (max-width: 1024px) {
+    .block-logo-firm {
+        justify-content: flex-start;
+    }
+    .contact-info {
+        margin-top: 51px;
+    }
+
+    .about-me {
+        max-width: 100%;
+    }
+    .user-info {
+        margin-top: 40px;
+    }
+    .user-skills {
+        margin-top: 25px;
+        padding: 20px 15px 30px;
+    }
+    .user-skills__container {
+        padding-top: 20px;
+    }
+    .user-skills__title {
+        margin-bottom: 16px;
+    }
+    .list_name-university,
+    .list_specialization,
+    .list_name-skill {
+        font-size: 16px;
+    }
+    .user-skills__container {
+        grid-template-columns: 2fr;
+    }
+}
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 23.67px 20px 40px;
+    }
+    .contact-info {
+        position: relative;
+        width: 100%;
+        min-width: 280px;
+        max-height: 100%;
+    }
+    .user-photo_glasses {
+        top: calc(16% - 155px / 4);
+    }
+    .user-name {
+        margin: 24px 0 34px;
+    }
+    .contaner {
+        grid-template-columns: 1fr;
+    }
+    .user-contact-information {
+        min-height: 288px;
+    }
+    .user-name__name {
+        margin-bottom: 4px;
+    }
+    .user-contact-information {
+        padding: 0 10px 0 18px;
+    }
+    .contact-information {
+        margin-bottom: 42px;
+    }
+    .user-skills::before {
+        right: calc(50% - 60px / 2);
+    }
+}
+
+/*
+@media (max-width: 576px) {
+}*/
