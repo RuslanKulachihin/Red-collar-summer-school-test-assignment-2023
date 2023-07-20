@@ -43,12 +43,12 @@ class Timer {
                 buildDialDOM(minets, second);
                 interval--;
                 localStorage.setItem('interval', interval);
-                timerHasEnded = interval <= 0;
+                timerHasEnded = interval <= -1;
             } else {
                 [minets, second] = getTimeBasedOnUrl();
                 buildDialInputDOM();
                 localStorage.setItem(currentUrl, +minets * 60 + +second - 1);
-                timerHasEnded = +minets * 60 + +second <= 0;
+                timerHasEnded = +minets * 60 + +second <= -1;
             }
 
             if (timerHasEnded) {
